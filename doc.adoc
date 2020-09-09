@@ -1,0 +1,9 @@
+= Sites
+
+Sites can be:
+
+* {edge-site}
+
+• {edge-site}s are like rows, {interior-site}s are like columns
+• {edge-site} are like train stations that you can't buy a ticket at
+• {local-cluster-site}s limit traffic to your local cluster
