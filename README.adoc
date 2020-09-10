@@ -3,7 +3,7 @@
 
 Explore terminology choices using AsciiDoc preview.
 
-For an example, checkout how link:doc.adoc[] renders at the link:https://arotna.github.io/vocab/?product=vocab+utility&feature1=write+generic+text&feature2=allow+others+change+that+text&feature3=keep+the+concepts+separate+from+structure[vocab website].
+For an example, checkout how link:doc.adoc[] renders at the link:https://arotna.github.io/vocab/index.html?product=vocab+utility&feature1=write+generic+text&feature2=allow+others+change+that+text&feature3=keep+the+concepts+separate+from+structure[vocab website].
 
 Click the *Attributes* tab to change attribute values.
 
