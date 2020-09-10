@@ -3,6 +3,10 @@
 
 Explore terminology choices using AsciiDoc preview.
 
+For an example, checkout how link:doc.adoc[] renders at the link:https://arotna.github.io/vocab/?product=vocab+utility&feature1=write+generic+text&feature2=allow+others+change+that+text&feature3=keep+the+concepts+separate+from+structure[vocab website].
+
+Click the *Attributes* tab to change attribute values.
+
 
 .Prerequisites
 
@@ -29,19 +33,36 @@ To create a GitHub page to share your idea of attribute values, while allowing a
 . Update the `index.html` using the following command:
 +
 ----
-
+./create.sh <list of attributes>
 ----
-. To preview 
++
+For example, to manipulate a doc with the attributes `foo` and `bar`
++
+----
+./create.sh foo bar
+----
+. Preview using a local web server, for example:
++
+----
+http-server .
+----
 . Publish your site uing GitHub.
 . Set values in the site, you can copy the URL params from the preview.
 . Share the URL with collegues, expect feedback.
 
 
-== Updating `asciidoctor.js`
+== Installing and updating prereqs
+
+Install node using link:https://github.com/nvm-sh/nvm[nvm].
+
+Install hygen using `npm i -g hygen`.
+
+Install a local web server using `npm i -g http-server`.
+
 
 You might need to update the javascript library that renders the HTML.
 
-. Install or update the library using `npm install`.
+. Install or update the library using `npm install` in the repo root.
 
 . Copy the latest version to the repo root directory:
 +

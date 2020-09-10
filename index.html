@@ -54,7 +54,7 @@
 
 <body onload="fetchParams()">
 
-    <script src="node_modules/@asciidoctor/core/dist/browser/asciidoctor.js"></script>
+    <script src="./asciidoctor.js"></script>
 
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'Content')" id="defaultOpen">Content</button>
@@ -74,23 +74,37 @@
         <form action="index.html" method="GET">
 
 
+
             <div class="block">
-                <label>edge-site</label>
-                <input type="text" id="edge-site" name="edge-site">
+                <label>product</label>
+                <input type="text" id="product" name="product">
 
             </div>
 
             <div class="block">
-                <label>test2</label>
-                <input type="text" id="test2" name="test2">
+                <label>feature1</label>
+                <input type="text" id="feature1" name="feature1">
 
             </div>
-            <br>
+
+            <div class="block">
+                <label>feature2</label>
+                <input type="text" id="feature2" name="feature2">
+
+            </div>
+
+            <div class="block">
+                <label>feature3</label>
+                <input type="text" id="feature3" name="feature3">
+
+            </div>
+
+            <br class="inject-blocks-above"> 
             <input type="submit" value="Set Attributes">
 
         </form>
         <br>
-        Asciidoc Rendering: &nbsp;
+       
     </div>
 
     <div id="OutputAsciiDoc" class="tabcontent">
@@ -101,8 +115,16 @@
 
         function fetchParams() {
 
-            document.getElementById('edge-site').value = getQueryStringValue('edge-site');
-            document.getElementById('test2').value = getQueryStringValue('test2');
+
+            document.getElementById('product').value = getQueryStringValue('product');
+
+            document.getElementById('feature1').value = getQueryStringValue('feature1');
+
+            document.getElementById('feature2').value = getQueryStringValue('feature2');
+
+            document.getElementById('feature3').value = getQueryStringValue('feature3');
+
+            // inject-fetch
 
         }
 

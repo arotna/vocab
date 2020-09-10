@@ -1,9 +1,9 @@
-= Sites
+= Explore terminology in the browser
 
-Sites can be:
+The {product} is great, it allows you to:
 
-* {edge-site}
+* {feature1}
+* {feature2}
+* {feature3}
 
-• {edge-site}s are like rows, {interior-site}s are like columns
-• {edge-site} are like train stations that you can't buy a ticket at
-• {local-cluster-site}s limit traffic to your local cluster
+Check out the https://github.com/arotna/vocab repo.

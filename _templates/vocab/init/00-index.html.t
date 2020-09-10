@@ -57,7 +57,7 @@ to: index.html
 
 <body onload="fetchParams()">
 
-    <script src="node_modules/@asciidoctor/core/dist/browser/asciidoctor.js"></script>
+    <script src="./asciidoctor.js"></script>
 
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'Content')" id="defaultOpen">Content</button>
@@ -77,23 +77,13 @@ to: index.html
         <form action="index.html" method="GET">
 
 
-            <div class="block">
-                <label>edge-site</label>
-                <input type="text" id="edge-site" name="edge-site">
 
-            </div>
-
-            <div class="block">
-                <label>test2</label>
-                <input type="text" id="test2" name="test2">
-
-            </div>
-            <br>
+            <br class="inject-blocks-above"> 
             <input type="submit" value="Set Attributes">
 
         </form>
         <br>
-        Asciidoc Rendering: &nbsp;
+       
     </div>
 
     <div id="OutputAsciiDoc" class="tabcontent">
@@ -104,8 +94,8 @@ to: index.html
 
         function fetchParams() {
 
-            document.getElementById('edge-site').value = getQueryStringValue('edge-site');
-            document.getElementById('test2').value = getQueryStringValue('test2');
+
+            // inject-fetch
 
         }
 
